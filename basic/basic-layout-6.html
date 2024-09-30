@@ -6,7 +6,23 @@
     <title>Basic Layout 6</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 20% 80%;
+        gap: 10px;
+      }
+      
+      header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      nav { 
+        grid-row: 1/4;
+        grid-column: 3;
+      }
+
     </style>
   </head>
   <body id="basic-layout-6">
