@@ -6,7 +6,34 @@
     <title>Basic Layout 9</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 15% 70% 15%;
+        gap: 10px;
+      }
+
+      nav {
+        display: flex;
+        columns: 1fr 1fr 1fr;
+        gap: 10px;
+      }
+
+      a {
+        stroke-width: 2px;
+        
+      }
+
+
+      main {
+        grid-column-start: 1;
+        grid-column-end: 3
+      }
+
+      footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
     </style>
   </head>
   <body id="basic-layout-9">
